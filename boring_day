@@ -29,13 +29,13 @@
 It's another long long long day to go
 this one's english is good, btw
 
-when is the end
+###when will this ends###
 
-*boring
+* boring
 
-*bored
+* bored
 
-*very bored
+* very bored
 
 
 
@@ -49,13 +49,13 @@ when is the end
 <p>It's another long long long day to go
 this one's english is good, btw</p>
 
-<p>when is the end</p>
+<h3 id="whenwillthisends">when will this ends</h3>
 
-<p>*boring</p>
-
-<p>*bored</p>
-
-<p>*very bored</p>
+<ul>
+<li><p>boring</p></li>
+<li><p>bored</p></li>
+<li><p>very bored</p></li>
+</ul>
 <!-- content end -->
 </div>
 <br>
