@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 · 2026-07-21(No.2)</title>
+<style>
+:root{
+  --paper:#faf7f1; --paper-2:#f3eee5; --ink:#2b2620; --ink-soft:#5c554b;
+  --line:#e2d9c8; --accent:#b5512c; --accent-soft:#f0e2d9; --gold:#9a7b2d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;font-size:16px;
+}
+.wrap{max-width:820px;margin:0 auto;padding:48px 24px 96px}
+.masthead{border-bottom:3px double var(--ink);padding-bottom:18px;margin-bottom:8px}
+.masthead .brand{font-family:"Noto Serif SC",serif;font-size:34px;font-weight:900;letter-spacing:2px}
+.masthead .brand em{color:var(--accent);font-style:normal}
+.masthead .meta{color:var(--ink-soft);font-size:13px;margin-top:6px;letter-spacing:.5px}
+.tldr{background:var(--paper-2);border-left:4px solid var(--accent);padding:14px 18px;margin:26px 0 0;font-size:15px}
+.stats{display:flex;gap:14px;margin:16px 0 8px}
+.stat{flex:1;background:#fff;border:1px solid var(--line);text-align:center;padding:14px 0 12px}
+.stat .n{font-family:"Noto Serif SC",serif;font-size:32px;font-weight:900;color:var(--accent);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+h2{
+  font-family:"Noto Serif SC",serif;font-size:22px;font-weight:700;
+  margin:44px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);
+}
+h2 .no{color:var(--accent);margin-right:6px}
+h3{font-family:"Noto Serif SC",serif;font-size:17.5px;margin:26px 0 8px;font-weight:700}
+p{margin:10px 0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{background:var(--accent-soft)}
+.item{margin:18px 0;padding:0 0 4px}
+.item .src{font-size:12.5px;color:var(--ink-soft)}
+.must{background:#fff;border:1px solid var(--line);border-top:3px solid var(--accent);
+  padding:20px 22px;margin:18px 0;box-shadow:0 1px 0 rgba(43,38,32,.05)}
+.must h3{margin-top:0}
+.foryou{background:var(--accent-soft);padding:10px 14px;margin:10px 0 4px;font-size:14.5px}
+.foryou::before{content:"对你 · ";font-weight:700;color:var(--accent)}
+.s1{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--accent);padding:1px 7px;margin-left:8px;vertical-align:2px;letter-spacing:.5px}
+.s15{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);border:1px solid var(--accent);padding:0 6px;margin-left:8px;vertical-align:2px}
+.s2{display:inline-block;font-size:11px;font-weight:700;color:var(--ink-soft);border:1px solid var(--line);padding:0 6px;margin-left:8px;vertical-align:2px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+th{font-family:"Noto Serif SC",serif;text-align:left;border-bottom:2px solid var(--ink);padding:8px 10px}
+td{border-bottom:1px solid var(--line);padding:8px 10px;vertical-align:top}
+tr:hover td{background:var(--paper-2)}
+footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:13px}
+.vibe{background:var(--paper-2);padding:10px 14px;margin:14px 0;font-size:14px}
+.vibe::before{content:"💬 社区风向 · ";font-weight:700}
+.watch{background:#fff;border:1px solid var(--gold);padding:14px 18px;margin:16px 0;font-size:14.5px}
+.watch b:first-child{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <div class="brand">AI <em>日报</em></div>
+    <div class="meta">2026-07-21 周二 · No.2 · 覆盖过去 24h · 程序员 × AI 数据湖 × AI 应用视角</div>
+  </div>
+
+  <div class="tldr">今日一句话:WAIC 交出 409 亿签约成绩单闭幕;月之暗面 IPO 议案已发出、K3 定价对标 Sonnet;GitHub 上"给 Agent 配代码图谱"三连爆款且增速近三倍,端侧语音集体上榜——Agent 的"感知三件套"在同一天集齐。</div>
+  <div class="stats">
+    <div class="stat"><div class="n">15</div><div class="l">精选条目</div></div>
+    <div class="stat"><div class="n">7</div><div class="l">分类覆盖</div></div>
+    <div class="stat"><div class="n">4</div><div class="l">个 S1 必读</div></div>
+  </div>
+
+  <h2><span class="no">🌟</span>今日必读</h2>
+
+  <div class="must">
+    <h3>1. WAIC 2026 闭幕成绩单:32 个项目签约 409 亿,意向采购 203.6 亿<span class="s1">S1</span></h3>
+    <p>7/20 闭幕:32 个重点项目签约(409 亿元)、意向采购 203.6 亿(+25%)、351 款产品全球首发、1.18 万亿创新企业意向信贷;<b>华为昇腾 950 超节点真机首次亮相</b>;Rich Sutton 提出 AI 进入"经验驱动时代",印奇称"仍在 AGI 山脚下"。</p>
+    <div class="foryou">203.6 亿意向采购是政企需求最实的官方口径——AI 应用商业化不是故事,是订单;昇腾 950 + 算力网入列(见必读 4),国产算力基建提速,数据底座的国产化适配窗口在扩大。</div>
+    <p class="src">来源:<a href="https://finance.caixin.com/2026-07-20/102465986.html">财新 7/20</a> / 新浪财经</p>
+  </div>
+
+  <div class="must">
+    <h3>2. 月之暗面已向投资人发送上市议案;K3 定价对标 Anthropic Sonnet<span class="s1">S1</span></h3>
+    <p>继昨日"最快六个月内港股 IPO"后:<b>上市议案已发送给投资人</b>;6 月 ARR 达 3 亿美元,K3 发布后数倍增长;<b>K3 定价大致与 Anthropic Sonnet 相当</b>。</p>
+    <div class="foryou">两个新信息点:①ARR 3 亿美金给了"开源获客→API 变现"一个可验证的财务样本;②定价对标 Sonnet 意味着旗舰模型价格战阶段性收尾,成本测算直接按 Sonnet 档估。K3 权重倒计时 6 天(7/27 前)。</div>
+    <p class="src">来源:新浪财经·操盘必读 7/21 / 华尔街见闻</p>
+  </div>
+
+  <div class="must">
+    <h3>3. Trending 信号:代码图谱三连加速,Agent 记忆 + 端侧语音同日在榜<span class="s1">S1</span></h3>
+    <p>code-review-graph 三连榜且增速 355→663→<b>1833/day</b> 逐级加速;同日 cognee(Agent 记忆,234/day)、Ontology-Playground(464/day)上榜;端侧语音三件套 voicebox(821)、transcribe.cpp(395)、moonshine(282)同日在榜。</p>
+    <div class="foryou">一天之内,Agent 的"感知三件套"——代码地图、记忆、耳朵——全部进入热榜主线。<b>cognee 和你的 MemoryNexus 同一赛道</b>,建议扫一眼它的 graph-based memory 做法;代码图谱三连加速说明已是 coding agent 标配件。</div>
+    <p class="src">来源:<a href="https://github.com/trending?since=daily">GitHub Trending</a></p>
+  </div>
+
+  <div class="must">
+    <h3>4. 算力基建景气双确认:国常会"六张网"算力网入列 + 光互联放量<span class="s1">S1</span></h3>
+    <p>国常会部署"六张网":水网、新型电网、<b>算力网</b>、新一代通信网、城市地下管网、物流网;新易盛 1.6T 光模块 Q3/Q4 放量加快;长飞:光纤需求转向智算中心驱动,保偏光纤 1-2 年需求增 10-20 倍;隔夜美股光通信/存储普涨。</p>
+    <div class="foryou">算力网升格国家基础设施督查项;光模块/保偏光纤放量正是 WAIC"超节点组网潮"的供应链印证——数据中心互联的成本结构在变,容量规划模型该更新参数了。</div>
+    <p class="src">来源:<a href="https://finance.caixin.com/2026-07-21/102466813.html">财新 7/21</a></p>
+  </div>
+
+  <h2><span class="no">🧠</span>模型与发布</h2>
+  <div class="item">
+    <p><b>DeepSeek V4 正式版定档"7 月中旬"上线,窗口临近</b><span class="s15">S1.5</span>:已入 7 月下旬,随时可能落地;R2 推理成本刚降 30%。</p>
+    <div class="foryou">湖上推理成本曲线继续下探,大上下文批处理场景(全量元数据、日志分析)的账越来越好算。</div>
+    <p class="src">来源:华尔街见闻·要闻前瞻 7/20</p>
+  </div>
+
+  <h2><span class="no">🤖</span>AI 应用与 Agent</h2>
+  <div class="item">
+    <p><b>阿里云 AgentOne 智能外呼 Agent 套餐调价:7/30 起最低 10 万分钟起购</b><span class="s2">S2</span>:Agent 商业化进入"套餐定价"阶段。来源:财新 7/21</p>
+    <p><b>msitarzewski/agency-agents 上热榜(⭐862/day)</b><span class="s15">S1.5</span>:多 Agent 编排模板集,与阿里 AgentTeams 的"Agent 团队制"互为呼应——Agent 编排正在模板化、商品化。</p>
+  </div>
+
+  <h2><span class="no">🏗</span>数据湖与 Infra</h2>
+  <div class="item">
+    <p><b>湖仓圈连续第三天平静</b>(WAIC 把人都吸走了;下周盯 Databricks IPO 筹备进展更有料)。</p>
+    <p><b>核电在欧洲复兴:AI 数据中心电力需求是直接推手</b><span class="s2">S2</span> · <b>隔夜美股光通信/存储普涨</b><span class="s2">S2</span>(与必读 4 互证)。</p>
+    <p class="src">来源:财新 7/21</p>
+  </div>
+
+  <h2><span class="no">📌</span>关注清单动态</h2>
+  <div class="watch">
+    <p>窗口内(7/20–21)<b>无新 release</b>(GitHub 官方接口核查:gravitino / iceberg / lance / superpowers / mattpocock/skills / agent-skills)。</p>
+    <p><b>补记(7/12,窗口外但值得知道)</b>:addyosmani/agent-skills 0.6.4 新增 <b>in-repo skill eval 框架</b>(结构校验→触发路由 CI→行为评分三层)+ 原生 Codex 插件支持——skills 生态开始卷"质量保障"了,你写 skill 时这套 eval 可以直接抄。</p>
+  </div>
+
+  <h2><span class="no">🔥</span>GitHub Trending(07-21 日榜)</h2>
+  <table>
+    <tr><th>#</th><th>项目</th><th>⭐/day</th><th>级别</th><th>一句话</th></tr>
+    <tr><td>1</td><td>tirth8205/code-review-graph</td><td>1,833</td><td>S1.5</td><td>三连且加速(355→663→1833):MCP 代码图谱成 coding agent 标配件</td></tr>
+    <tr><td>2</td><td>oblien/openship</td><td>1,641</td><td>S2</td><td>新上榜,待观察</td></tr>
+    <tr><td>3</td><td>diegosouzapw/OmniRoute</td><td>1,107</td><td>S2</td><td>新上榜路由向项目,待观察</td></tr>
+    <tr><td>4</td><td>every-app/open-seo</td><td>939</td><td>S2</td><td>新上榜</td></tr>
+    <tr><td>5</td><td>msitarzewski/agency-agents</td><td>862</td><td>S1.5</td><td>多 Agent 编排模板——"Agent 团队制"模板化</td></tr>
+    <tr><td>6</td><td>rohitg00/ai-engineering-from-scratch</td><td>823</td><td>S2</td><td>四连榜,AI 工程教程</td></tr>
+    <tr><td>7</td><td>jamiepine/voicebox</td><td>821</td><td>S1.5</td><td>二连榜,端侧语音主题主力</td></tr>
+    <tr><td>8</td><td>KnockOutEZ/wigolo</td><td>689</td><td>S2</td><td>三连榜,待观察</td></tr>
+    <tr><td>9</td><td>1jehuang/jcode</td><td>568</td><td>S2</td><td>二连榜</td></tr>
+    <tr><td>10</td><td>Robbyant/lingbot-map</td><td>565</td><td>S2</td><td>回归榜,前馈式 3D 基础模型</td></tr>
+  </table>
+  <p class="src">榜外:kvcache-ai/ktransformers 458(三连)、MoonshotAI/kimi-cli 410、microsoft/Ontology-Playground 464、handy-computer/transcribe.cpp 395、topoteretes/cognee 234(Agent 记忆)、PrefectHQ/fastmcp 96。</p>
+  <div class="vibe">今日热榜三主题——代码图谱、Agent 记忆/本体、端侧语音。Agent 的"感知三件套"一天集齐,做 Agent infra 的接下来拼的就是这三层的工程化。</div>
+
+  <h2><span class="no">💰</span>融资与商业</h2>
+  <div class="item">
+    <p><b>五大保险巨头力挺资本市场,国寿单日净买入超 100 亿</b><span class="s15">S1.5</span>:宽基 ETF 持续放量,"2000 亿抄底"叙事延续。</p>
+    <div class="foryou">底部筹码被机构接走,科技板块的业绩验证期有了安全垫。</div>
+    <p class="src">来源:新浪财经 7/21</p>
+    <p><b>高盛:对冲基金正以创纪录速度撤出美国科技股</b><span class="s15">S1.5</span>:与 A 股/保险抄底互为镜像——全球资金在换仓,不是离场。来源:财新 7/21</p>
+    <p><b>A 股回购潮</b><span class="s2">S2</span>:东山精密、三一重工等密集回购。来源:新浪财经</p>
+  </div>
+
+  <h2><span class="no">🌍</span>时政与经济(程序员视角)</h2>
+  <div class="item">
+    <p><b>美军对伊朗发动新一轮打击(美东 7/20 下午)</b><span class="s15">S1.5</span>:地缘继续升温,油价与供应链风险敞口扩大,云成本与硬件交付不确定性延续。来源:<a href="https://finance.caixin.com/2026-07-21/102466813.html">财新 7/21</a></p>
+    <p><b>美国对加拿大部分产品加征 50% 关税</b><span class="s15">S1.5</span>:贸易战扩至北美,跨境供应链再定价。来源:财新 7/21</p>
+    <p><b>外交部:习近平 9 月访美仍在按计划进行</b><span class="s2">S2</span>。来源:财新 7/21</p>
+  </div>
+
+  <footer>
+    <p>明早 09:00 验证自动触发版;S1 阈值与口味反馈随时说。</p>
+  </footer>
+</div>
+</body>
+</html>
