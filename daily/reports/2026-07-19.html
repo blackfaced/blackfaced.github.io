@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 日报 · 2026-07-19(试刊号·格式演示版)</title>
+<style>
+:root{
+  --paper:#faf7f1; --paper-2:#f3eee5; --ink:#2b2620; --ink-soft:#5c554b;
+  --line:#e2d9c8; --accent:#b5512c; --accent-soft:#f0e2d9; --gold:#9a7b2d;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;font-size:16px;
+}
+.wrap{max-width:820px;margin:0 auto;padding:48px 24px 96px}
+.masthead{border-bottom:3px double var(--ink);padding-bottom:18px;margin-bottom:8px}
+.masthead .brand{font-family:"Noto Serif SC",serif;font-size:34px;font-weight:900;letter-spacing:2px}
+.masthead .brand em{color:var(--accent);font-style:normal}
+.masthead .meta{color:var(--ink-soft);font-size:13px;margin-top:6px;letter-spacing:.5px}
+.tldr{background:var(--paper-2);border-left:4px solid var(--accent);padding:14px 18px;margin:26px 0 0;font-size:15px}
+.stats{display:flex;gap:14px;margin:16px 0 8px}
+.stat{flex:1;background:#fff;border:1px solid var(--line);text-align:center;padding:14px 0 12px}
+.stat .n{font-family:"Noto Serif SC",serif;font-size:32px;font-weight:900;color:var(--accent);line-height:1.1}
+.stat .l{font-size:12.5px;color:var(--ink-soft);margin-top:3px}
+h2{
+  font-family:"Noto Serif SC",serif;font-size:22px;font-weight:700;
+  margin:44px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--line);
+}
+h2 .no{color:var(--accent);margin-right:6px}
+h3{font-family:"Noto Serif SC",serif;font-size:17.5px;margin:26px 0 8px;font-weight:700}
+p{margin:10px 0}
+a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent)}
+a:hover{background:var(--accent-soft)}
+.item{margin:18px 0;padding:0 0 4px}
+.item .src{font-size:12.5px;color:var(--ink-soft)}
+.must{background:#fff;border:1px solid var(--line);border-top:3px solid var(--accent);
+  padding:20px 22px;margin:18px 0;box-shadow:0 1px 0 rgba(43,38,32,.05)}
+.must h3{margin-top:0}
+.foryou{background:var(--accent-soft);padding:10px 14px;margin:10px 0 4px;font-size:14.5px}
+.foryou::before{content:"对你 · ";font-weight:700;color:var(--accent)}
+.s1{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--accent);padding:1px 7px;margin-left:8px;vertical-align:2px;letter-spacing:.5px}
+.s15{display:inline-block;font-size:11px;font-weight:700;color:var(--accent);border:1px solid var(--accent);padding:0 6px;margin-left:8px;vertical-align:2px}
+.s2{display:inline-block;font-size:11px;font-weight:700;color:var(--ink-soft);border:1px solid var(--line);padding:0 6px;margin-left:8px;vertical-align:2px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+th{font-family:"Noto Serif SC",serif;text-align:left;border-bottom:2px solid var(--ink);padding:8px 10px}
+td{border-bottom:1px solid var(--line);padding:8px 10px;vertical-align:top}
+tr:hover td{background:var(--paper-2)}
+footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);color:var(--ink-soft);font-size:13px}
+.vibe{background:var(--paper-2);padding:10px 14px;margin:14px 0;font-size:14px}
+.vibe::before{content:"💬 社区风向 · ";font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <div class="brand">AI <em>日报</em></div>
+    <div class="meta">2026-07-19 周日 · 试刊号(格式演示版)· 覆盖 07-17~19 精选 · 程序员 × AI 数据湖 × AI 应用视角</div>
+  </div>
+
+  <div class="tldr">今日一句话:Kimi K3 登顶前端编码榜、WAIC 进入下半场,GitHub 热榜连续第二天被 "Skills" 占领——生态信号已经不能更明显了。</div>
+  <div class="stats">
+    <div class="stat"><div class="n">16</div><div class="l">精选条目</div></div>
+    <div class="stat"><div class="n">6</div><div class="l">分类覆盖</div></div>
+    <div class="stat"><div class="n">5</div><div class="l">个 S1 必读</div></div>
+  </div>
+
+  <h2><span class="no">🌟</span>今日必读</h2>
+
+  <div class="must">
+    <h3>1. Kimi K3 登顶前端编码榜,力压 Claude Fable 5 与 GPT-5.6<span class="s1">S1</span></h3>
+    <p>发布仅 8 天(2.8T 总参、1M 上下文、开放权重),7 个前端细分维度全面领先;X 上实测讨论持续发酵。</p>
+    <div class="foryou">做 AI 应用的前端生成场景(页面、组件、可视化)多了一个开放权重的顶级选项,私有化部署+合规敏感场景直接受益;关注 API 定价与 vLLM 支持进度。</div>
+    <p class="src">来源:X: @AYI_Ainotes · <a href="https://www.aijourney.vip/2759.html">AI 早报</a></p>
+  </div>
+
+  <div class="must">
+    <h3>2. Apple Intelligence 国行获批:同时接入阿里 Qwen 与百度文心<span class="s1">S1</span></h3>
+    <p>网信办批准,覆盖 iOS / iPadOS / macOS / visionOS,双国产模型供应商合规落地。</p>
+    <div class="foryou">国行 iPhone 的 AI 能力入口打开,端侧应用窗口期;同时这是"合规多供应商"范式样本,做 ToC AI 应用的值得抄作业。</div>
+    <p class="src">来源:TechCrunch / Bloomberg(转 <a href="https://www.aijourney.vip/2759.html">AI 早报</a>)</p>
+  </div>
+
+  <div class="must">
+    <h3>3. 世界 AI 合作组织签署 + WAIC 2026 进行中(7/17–20)<span class="s1">S1</span></h3>
+    <p>29 个创始成员国签署协定;WAIC 超 300 款 AI 产品全球首发,高层定调"携手构建公正合理的全球 AI 治理体系"。</p>
+    <div class="foryou">AI 治理框架实体化,合规/数据安全/模型透明度将成硬性要求——做数据基础设施的,把治理合规当长期架构变量。WAIC 还剩一天,数据基础设施发布密集期。</div>
+    <p class="src">来源:<a href="https://finance.caixin.com/2026-07-17/102464960.html">财新</a> / 央视新闻</p>
+  </div>
+
+  <div class="must">
+    <h3>4. 台积电 Q2 净利 +77.4%,对美追加 1000 亿美元投资<span class="s1">S1</span></h3>
+    <p>净利 7065.6 亿新台币远超预期,Q3 指引 446–458 亿美元。</p>
+    <div class="foryou">AI 算力需求最硬的季度验证;做 Infra 成本测算别指望算力单价短期大降,存储和先进制程同向受益。</div>
+    <p class="src">来源:<a href="https://finance.caixin.com/2026-07-17/102464960.html">财新</a></p>
+  </div>
+
+  <div class="must">
+    <h3>5. Skills 生态连续第二天霸榜 GitHub Trending<span class="s1">S1</span></h3>
+    <p>7/17:agentskills 规范、superpowers、caveman、claude-code 同榜;7/19:ibelick/ui-skills(⭐123/day)继续上榜。</p>
+    <div class="foryou">连续两天同生态位霸榜,信号已确认——Skills 成为 AI 能力的新分发渠道。你的数据湖/应用产品,该考虑把能力封装成 Skill 了。</div>
+    <p class="src">来源:<a href="https://github.com/trending?since=daily">GitHub Trending</a></p>
+  </div>
+
+  <h2><span class="no">🧠</span>模型与发布</h2>
+  <div class="item">
+    <p><b>MiniMax 完成 160 亿港元融资;智谱 H 股配售 314 亿港元</b><span class="s15">S1.5</span>(本周补录):头部模型公司进入资本密集下半场,API 定价从 4 月价格战回归理性。</p>
+    <div class="foryou">API 使用成本预期可以稳定下来了。</div>
+    <p class="src">来源:<a href="https://www.caixin.com/2026-07-10/102462741.html">财新</a></p>
+    <p><b>NVIDIA Nemotron 3 Embed 8B:RTEB 基准排名第一</b><span class="s15">S1.5</span>:开源 Embedding 模型集合,8B 版登顶。</p>
+    <div class="foryou">做 RAG/向量检索的可直接替换付费 Embedding API,降本立竿见影。</div>
+    <p class="src">来源:marktechpost.com</p>
+  </div>
+
+  <h2><span class="no">🤖</span>AI 应用与 Agent(7/17 热榜回顾)</h2>
+  <div class="item">
+    <p><b>TencentCloud/CubeSandbox</b><span class="s15">S1.5</span>:Agent 即时并发安全沙箱,云厂商把"Agent 运行时"当标准品做。</p>
+    <p><b>facebook/astryx</b><span class="s2">S2</span>:agent-ready 设计系统,UI 给 Agent 读。</p>
+    <p><b>usestrix/strix</b><span class="s2">S2</span>:开源 AI 渗透测试。</p>
+    <p class="src">来源:GitHub</p>
+  </div>
+
+  <h2><span class="no">🏗</span>数据湖与 Infra</h2>
+  <div class="item">
+    <p><b>WAIC 期间数据基础设施发布密集,明日(周一)日报汇总三天动态</b><span class="s15">S1.5</span></p>
+    <p><b>背景阅读:Apache Doris 2026 Roadmap</b><span class="s15">S1.5</span>:押注 Iceberg/Paimon 湖表一体化(V3 行级血缘、Paimon 索引、REST Catalog 兼容、Flink Streaming Lakehouse)。</p>
+    <div class="foryou">做湖上 OLAP 选型,这是今年最清晰的引擎方视角路线图。</div>
+    <p class="src">来源:<a href="https://juejin.cn/post/7627690218269425718">掘金</a></p>
+  </div>
+
+  <h2><span class="no">🔥</span>GitHub Trending(07-19 日榜)</h2>
+  <table>
+    <tr><th>#</th><th>项目</th><th>⭐/day</th><th>级别</th><th>一句话</th></tr>
+    <tr><td>1</td><td>codecrafters-io/build-your-own-x</td><td>1,126</td><td>S1.5</td><td>从零复刻技术栈;想深入 DB/MQ/Container 内核,跟着复刻比看书有效</td></tr>
+    <tr><td>2</td><td>Robbyant/lingbot-map</td><td>831</td><td>S1.5</td><td>前馈式 3D 基础模型,流式重建;3D 重建从离线跑批走向流式推理</td></tr>
+    <tr><td>3</td><td>tirth8205/code-review-graph</td><td>355</td><td>S1.5</td><td>Local-first 代码图谱,经 MCP 为 Agent 构建持久化代码地图;MCP 正成标准接口</td></tr>
+    <tr><td>4</td><td>PostHog/posthog</td><td>338</td><td>S2</td><td>开源产品分析;开源 OLAP+埋点 self-hosted 方案成熟</td></tr>
+    <tr><td>5</td><td>KnockOutEZ/wigolo</td><td>203</td><td>S2</td><td>新上榜,待观察</td></tr>
+    <tr><td>6</td><td>rohitg00/ai-engineering-from-scratch</td><td>191</td><td>S2</td><td>AI 工程从零教程</td></tr>
+    <tr><td>7</td><td>lyogavin/airllm</td><td>161</td><td>S2</td><td>4GB 显存跑 70B 模型的推理库</td></tr>
+    <tr><td>8</td><td>ibelick/ui-skills</td><td>123</td><td>S1.5</td><td>知名 UI 工程师的 skills 集——Skills 信号连续第二天(见必读 5)</td></tr>
+    <tr><td>9</td><td>elder-plinius/G0DM0D3</td><td>69</td><td>S2</td><td>越狱 prompt 研究向,安全社区热议</td></tr>
+    <tr><td>10</td><td>MoonshotAI/kimi-cli</td><td>65</td><td>S1.5</td><td>Kimi 官方 CLI,终端里直接用 K3</td></tr>
+  </table>
+  <div class="vibe">HN 在热议某 SQL 解析器被 AI 辅助重写(70x 提速)——AI 重写大型解析器正在从段子变成实践标杆。</div>
+
+  <h2><span class="no">💰</span>融资与商业</h2>
+  <div class="item">
+    <p><b>长鑫科技(DRAM)申购火爆</b><span class="s15">S1.5</span>:中签率约 0.47%,中性预期市值约 3 万亿。</p>
+    <div class="foryou">AI 存储需求的资本化出口。</div>
+    <p class="src">来源:<a href="https://finance.sina.cn/headline/2026-07-17/detail-iniiaair8127924.d.html">新浪财经</a></p>
+  </div>
+
+  <h2><span class="no">🌍</span>时政与经济(程序员视角)</h2>
+  <div class="item">
+    <p><b>美伊连续互击,霍尔木兹海峡局势升温</b><span class="s15">S1.5</span>:美军轰炸伊朗基础设施,全球风险资产周中齐跌。</p>
+    <div class="foryou">能源数据与地缘风险指标值得纳入监控看板;供应链波动传导云成本。</div>
+    <p class="src">来源:CNN / NYT / AA</p>
+    <p><b>巴菲特力挺 Alphabet、批评股市投机化</b><span class="s2">S2</span> · <b>特朗普重申希望降息</b><span class="s2">S2</span> · <b>洪灏:人民币被低估,价值重估是未来五年最大机会</b><span class="s2">S2</span></p>
+    <p class="src">来源:新浪财经</p>
+  </div>
+
+  <footer>
+    <p>本期为格式演示版(S 分级 + 统计条 + ⭐增速 +「对你:」)。反馈随时说,明天 09:00 正式第一期(覆盖周末三天)。</p>
+  </footer>
+</div>
+</body>
+</html>
