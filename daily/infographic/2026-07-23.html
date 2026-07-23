@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:900px;background:#faf7f1;color:#2b2620;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",serif;padding:36px 40px 30px}
+.mast{border-bottom:3px double #2b2620;padding-bottom:14px;text-align:center}
+.mast h1{font-size:44px;letter-spacing:14px;font-weight:900}
+.mast .sub{margin-top:8px;font-size:13px;color:#6b6257;letter-spacing:3px}
+.mast .date{color:#b5512c;font-weight:700}
+.stats{display:flex;justify-content:center;gap:0;border-bottom:1px solid #2b2620;margin-top:14px}
+.stats div{padding:10px 26px;font-size:14px;border-right:1px solid #d8d0c2}
+.stats div:last-child{border-right:none}
+.stats b{color:#b5512c;font-size:20px;margin-right:6px}
+.sect{font-size:15px;font-weight:900;letter-spacing:6px;margin:22px 0 12px;color:#b5512c;border-left:5px solid #b5512c;padding-left:10px}
+.s1{border:1px solid #d8d0c2;background:#fffdf8;padding:12px 16px;margin-bottom:10px}
+.s1 h3{font-size:16px;line-height:1.45}
+.s1 h3 .tag{display:inline-block;background:#b5512c;color:#faf7f1;font-size:11px;padding:2px 7px;margin-right:8px;vertical-align:2px;letter-spacing:1px}
+.s1 p{font-size:12.5px;color:#4a443b;line-height:1.65;margin-top:6px}
+.s1 .for{color:#2b2620;margin-top:5px;font-size:12.5px}
+.s1 .for b{color:#b5512c}
+.grid{display:flex;gap:14px;align-items:flex-start}
+.col{flex:1;min-width:0}
+.card{border:1px solid #d8d0c2;background:#fffdf8;padding:11px 14px;margin-bottom:12px}
+.card h4{font-size:13.5px;color:#b5512c;letter-spacing:2px;border-bottom:1px dashed #d8d0c2;padding-bottom:6px;margin-bottom:8px}
+.card .it{font-size:12px;line-height:1.55;margin-bottom:7px;color:#4a443b}
+.card .it b{color:#2b2620}
+.st{display:inline-block;font-size:10px;font-weight:700;padding:1px 5px;margin-right:5px;vertical-align:1px}
+.st15{background:#2b2620;color:#faf7f1}
+.st2{background:#e6ddcc;color:#2b2620}
+table{width:100%;border-collapse:collapse;font-size:11.5px}
+td,th{padding:3px 4px;border-bottom:1px solid #eee5d5;text-align:left}
+td.r,th.r{text-align:right;color:#b5512c;font-weight:700}
+.foot{border-top:3px double #2b2620;margin-top:8px;padding-top:10px;font-size:11px;color:#6b6257;text-align:center;letter-spacing:1px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="mast">
+  <h1>AI 日报</h1>
+  <div class="sub">LAKEHOUSE × AGENT 编辑室 ｜ <span class="date">2026年7月23日 · 星期四</span> ｜ NO. 0723</div>
+</div>
+<div class="stats">
+  <div><b>22</b>精选条目</div>
+  <div><b>8</b>分类覆盖</div>
+  <div><b>4</b>S1 必读</div>
+</div>
+
+<div class="sect">今 日 必 读</div>
+
+<div class="s1"><h3><span class="tag">S1</span>腾讯混元 Hyra-1.0：递归自我改进的科研智能体</h3>
+<p>经验库 + 沙盒验证 + 评估器共进化：55 个数学开放问题 29 个刷新纪录，NanoGPT 达 3.28 loss 缩至 76.4 秒，量子路由效率 +44.4%。RSI 从 DeepMind 独角戏变成集团军。</p>
+<p class="for"><b>对你：</b>Experience Bank 与 MemoryNexus 几乎同构——这是 Agent 记忆系统的一次大规模背书，值得细读其经验表示与防 hack 设计。</p></div>
+
+<div class="s1"><h3><span class="tag">S1</span>DeepSeek V4 正式版倒计时：峰谷定价落地，旧别名明日退役</h3>
+<p>GA 引入峰谷定价（9–12 / 14–18 点高峰价 ×2），V4-Pro 输出平时 $0.87/M；deepseek-chat / deepseek-reasoner 7月24日 下线。推理进入「电网调峰」时代。</p>
+<p class="for"><b>对你：</b>今天就把旧模型别名迁走，并给调度器加峰谷感知——批量任务挪到 18 点后，账单立省一半。</p></div>
+
+<div class="s1"><h3><span class="tag">S1</span>Anthropic 15 亿美元版权和解获法院最终批准</h3>
+<p>约 50 万部作品、每部 $3,000，91% 作者已申领。赔的不是「训练」而是「盗版来路」——训练数据从此有了市场价。</p>
+<p class="for"><b>对你：</b>数据资产价值里现在包含来源凭证：湖里的 lineage / provenance 元数据，未来决定数据集敢不敢卖给模型厂商。</p></div>
+
+<div class="s1"><h3><span class="tag">S1</span>美五大科技巨头表外债务 $1.65 万亿；Oracle 信用风险 18 年新高</h3>
+<p>表外债务四年膨胀 8 倍、超过表内；2026 年 AI 资本开支预计破 $8,000 亿。Oracle 五年期 CDS 飙至约 203bp。市场开始给「看不见的杠杆」定价。</p>
+<p class="for"><b>对你：</b>云厂商融资成本焦虑的第一波传导就是算力涨价——与 DeepSeek 峰谷定价是同一故事的两端。</p></div>
+
+<div class="grid">
+<div class="col">
+
+<div class="card"><h4>大模型与 AGENT</h4>
+<div class="it"><span class="st st15">S1.5</span><b>Qwen-Image-3.0</b>：4.5k token 长输入直出知识图解与复杂 UI，10px 小字清晰——从「好看」卷到「好用」。</div>
+<div class="it"><span class="st st15">S1.5</span><b>GLM-5.5 预热</b>：唐杰称「史诗级 plus」，参数或破万亿，预计 8 月。</div>
+<div class="it"><span class="st st2">S2</span><b>Kimi K3</b> 权重 7月27日 前放出，2.8 万亿参数。</div>
+<div class="it"><span class="st st2">S2</span>价格战回响：企业开始算 AI 账单，竞争单位变成美元/任务。</div>
+</div>
+
+<div class="card"><h4>数据与 LAKEHOUSE</h4>
+<div class="it"><span class="st st15">S1.5</span><b>Amoro AIP-5 Phase 2</b>：优化资源需求驱动弹性扩容，指数爬坡 + 配额感知。</div>
+<div class="it"><span class="st st2">S2</span><b>LakeSoul</b>：Rust 向量索引独立构建 + ANN 检索，升级 DataFusion 54。</div>
+<div class="it"><span class="st st2">S2</span><b>Iceberg</b> 主干：V4 manifest 基础类型进场；新增 AGENTS.md 给 AI 贡献立规矩。</div>
+</div>
+
+<div class="card"><h4>融资与商业（07-22）</h4>
+<div class="it"><span class="st st15">S1.5</span><b>Glow</b> A 轮 $180M（估值 $1.2B）：管「跑 agent 的终端」。</div>
+<div class="it"><span class="st st15">S1.5</span><b>Cathedral</b> $160M（估值 $1.4B）：军用网络 AI，a16z+红杉。</div>
+<div class="it"><span class="st st2">S2</span><b>Candid Health</b> D 轮 $120M，估值三倍于上轮。</div>
+<div class="it"><span class="st st2">S2</span>传 Anthropic 寻求数十亿 pre-IPO 信贷（单源待核）。</div>
+</div>
+
+</div>
+<div class="col">
+
+<div class="card"><h4>GITHUB TRENDING · ⭐/DAY</h4>
+<table>
+<tr><th>Repo</th><th class="r">增速</th></tr>
+<tr><td>koala73/worldmonitor</td><td class="r">4,139</td></tr>
+<tr><td>ayghri/i-have-adhd</td><td class="r">1,699</td></tr>
+<tr><td>diegosouzapw/OmniRoute</td><td class="r">1,651</td></tr>
+<tr><td>oblien/openship</td><td class="r">1,302</td></tr>
+<tr><td>tirth8205/code-review-graph</td><td class="r">882</td></tr>
+<tr><td>chrislgarry/Apollo-11</td><td class="r">768</td></tr>
+</table>
+<div class="it" style="margin-top:6px">Agent 周边屠版：技能包、AI 网关、代码地图。worldmonitor/RuView 星数比例反常，刷星嫌疑。</div>
+</div>
+
+<div class="card"><h4>关注清单异动</h4>
+<div class="it"><span class="st st15">S1.5</span><b>BrowserOS</b>：BrowserClaw 托管技能跨 harness 分发。</div>
+<div class="it"><span class="st st15">S1.5</span><b>last30days-skill v3.18.0</b>：宿主裁决三段协议，删掉引擎内 LLM judge。</div>
+<div class="it"><span class="st st2">S2</span><b>ai-berkshire</b>：中国大模型六强研报 + K3 架构讲解。</div>
+<div class="it"><span class="st st2">S2</span><b>MemoryNexus</b>：窗口内无新提交；上周完成 feedback 决策血缘实验。</div>
+</div>
+
+<div class="card"><h4>时政与经济</h4>
+<div class="it"><span class="st st2">S2</span>美股 7/22 收高：纳指 +1.29%，芯片股领涨；87% 已发财报超预期；本周 Alphabet/IBM/特斯拉答卷。</div>
+<div class="it"><span class="st st2">S2</span>英国 AI 升至内阁级；美国又一名 AI 沙皇辞职（单源待核）。</div>
+</div>
+
+<div class="card"><h4>社区风向</h4>
+<div class="it">HN 榜首：<b>陶哲轩 × ChatGPT</b> 对话 Jacobian 猜想反例（566 分）；「二手 GPU 集群值多少钱」152 评论；「AI Labs Pelicanmaxxing?」讽刺囤算力。X 热转 DeepSeek 峰谷算账帖与 Hyra 经验库架构图。</div>
+</div>
+
+</div>
+</div>
+
+<div class="foot">AI 日报 · 编辑 Kimi K3 ｜ 信源：GitHub Trending / 36氪 / 财新 / 财联社 / Ars Technica / Bloomberg / 日经 / HN<br>S1 必读 ｜ S1.5 重要 ｜ S2 速览 ｜ blackfaced.github.io/daily/</div>
+</body>
+</html>
