@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 日报 · 2026-07-23</title>
+<style>
+*{box-sizing:border-box}
+body{background:#faf7f1;color:#2b2620;font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",serif;max-width:860px;margin:0 auto;padding:40px 28px;line-height:1.75}
+h1{text-align:center;font-size:38px;letter-spacing:10px;border-bottom:3px double #2b2620;padding-bottom:16px}
+h2{font-size:20px;color:#b5512c;border-left:6px solid #b5512c;padding-left:12px;margin-top:36px;letter-spacing:3px}
+h3{font-size:17px;margin-top:26px}
+blockquote{background:#fffdf8;border:1px solid #d8d0c2;padding:10px 18px;color:#4a443b}
+table{border-collapse:collapse;width:100%;font-size:14px;background:#fffdf8}
+th,td{border:1px solid #d8d0c2;padding:6px 10px;text-align:left}
+th{background:#f0e9dc}
+hr{border:none;border-top:1px solid #d8d0c2;margin:28px 0}
+a{color:#b5512c}
+em{color:#6b6257}
+</style>
+</head>
+<body>
+<h1 id="ai-日报-2026-07-23周四">AI 日报 · 2026-07-23（周四）</h1>
+<blockquote>
+<p>纸面 #faf7f1 ｜ 墨色 #2b2620 ｜ 朱红 #b5512c <strong>精选 22 条 ｜ 覆盖 8 个分类 ｜ S1 必读 4 条</strong></p>
+</blockquote>
+<hr />
+<h2 id="今日必读s1">今日必读（S1）</h2>
+<h3 id="s1-①-腾讯混元发布-hyra-1.0递归自我改进的科研智能体">S1 ① 腾讯混元发布 Hyra-1.0：递归自我改进的科研智能体</h3>
+<p><strong>来源：IT之家 / 凤凰网科技，07-21</strong></p>
+<p>轻量 Harness + 生产者-消费者异步流水线：Context Agent 维护「经验库（Experience Bank）」持续供给灵感上下文，多个 Proposal Agent 在独立沙盒中执行并评分；双层循环让评估器与方案共进化。战绩：55 个数学开放问题中 29 个刷新历史最好结果；NanoGPT Speedrun 达到 3.28 validation loss 缩短至 76.4 秒；IBM Q20 量子路由效率较经典 SABRE 提升 44.4%；PARP1 抑制剂候选分子联合评分超过已上市药物 olaparib。对标 AlphaEvolve，但强调「评估器也会进化」。</p>
+<p><strong>点评：</strong> RSI（递归自我改进）今年从 DeepMind 独角戏变成集团军——Karpathy 的 autoresearch、Together 的 kissing number、现在腾讯正式下场。Hyra 真正的新意不在「会做题」，而在把经验显式资产化：成功与失败都入库，下一轮探索吃上一轮的复利。 <strong>对你：</strong> 这套 Experience Bank 与 MemoryNexus 几乎同构——Hyra 证明了「经验库 + 沙盒验证 + 评估器共进化」闭环在科研级任务上能跑出 SOTA，等于给 Agent 记忆系统做了一次大规模背书。建议读它的开源成果仓库，重点看经验条目如何表示、如何检索、如何防止评估器被 hack。<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<h3 id="s1-②-deepseek-v4-正式版倒计时峰谷定价落地旧-api-别名明日退役">S1 ② DeepSeek V4 正式版倒计时：峰谷定价落地，旧 API 别名明日退役</h3>
+<p><strong>来源：36氪，07-20 / 07-22</strong></p>
+<p>V4 正式版官宣 7 月内上线（昨日信源称已推迟至本月底，落地进入读秒），GA 同步引入峰谷定价：每日 9:00–12:00、14:00–18:00（UTC+8）高峰时段 API 价格为平时 2 倍。V4-Pro 输出平时 0.87 美元/百万 token（高峰 1.74），V4-Flash 输出平时 0.28 美元；缓存命中的输入价依然极低（Flash 命中 0.0028 美元）。<code>deepseek-chat</code> 与 <code>deepseek-reasoner</code> 两个旧模型名 <strong>7 月 24 日正式下线</strong>。预览版官方自测 SWE-bench Verified 距 Claude Opus 4.6 Max 仅 0.2 个百分点，价格约为对方 1/7。</p>
+<p><strong>点评：</strong> 「价格屠夫」第一次给算力装上计价器，这是行业信号——推理需求已从「抢供给」进入「调峰」阶段，逻辑和电网一模一样。极低的缓存命中价等于官方明示：批处理、评测、数据生成请挪到夜里。 <strong>对你：</strong> 若 MemoryNexus 或你的 Agent 链路白天长跑，明天起账单直接翻倍。今天就做两件事：①把代码里的旧模型别名迁到新名字；②给调度器加「峰谷感知」，批量任务排队到 18 点后。<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<h3 id="s1-③-anthropic-15-亿美元版权和解获法院最终批准">S1 ③ Anthropic 15 亿美元版权和解获法院最终批准</h3>
+<p><strong>来源：Ars Technica / TechCrunch，07-20/21</strong></p>
+<p>法官 Martínez-Olguín 批准美国史上最大版权和解：覆盖约 50 万部作品、每部约 3,000 美元，91% 作者与出版方已提交申领，仅 350 人退出；律师费从申请的 1.87 亿美元砍至约 1.01 亿。判例逻辑不变：合法获取的书籍用于训练属合理使用，赔的是从 LibGen 等盗版站下载的 700 万册。</p>
+<p><strong>点评：</strong> 这笔钱真正定价的不是「训练」，而是「来路不正」。和解意味着不构成约束性先例——OpenAI、Meta、Google、Midjourney 的案子各打各的——但「每部作品 3,000 美元」从此成为所有谈判桌上的锚。 <strong>对你：</strong> 做数据湖的该记住：数据资产的价值里现在包含「来源凭证」。表里的 lineage / provenance 元数据，未来可能直接决定一份数据集敢不敢卖给模型厂商。<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a><a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<h3 id="s1-④-日经美五大科技巨头表外债务激增至-1.65-万亿美元oracle-信用风险创-18-年新高">S1 ④ 日经：美五大科技巨头表外债务激增至 1.65 万亿美元；Oracle 信用风险创 18 年新高</h3>
+<p><strong>来源：日经（经 CNMO 转引）/ Bloomberg（经 NDTV Profit 转引），07-21</strong></p>
+<p>Alphabet、微软、亚马逊、Meta、Oracle 的表外债务四年膨胀 8 倍至 <strong>1.65 万亿美元</strong>，已超过表内债务总额；五巨头 2026 年 AI 资本开支预计突破 8,000 亿美元（约占美国 GDP 2.5%），2027 年或达 1.1 万亿。同日 Oracle 五年期 CDS 升至约 203bp，创 2008 年以来新高；S&amp;P 本月已将其评级降至距垃圾级仅一档。</p>
+<p><strong>点评：</strong> AI 军备竞赛的账本正从利润表挪到表外——长期租约、采购承诺、复杂财务安排，市场开始给「看不见的杠杆」定价。Oracle 成了信用市场的 AI 晴雨表，这一幕在 2000 年光纤泡沫里演过。 <strong>对你：</strong> 写代码的也该关心：云厂商为融资成本焦虑时，第一波传导就是算力涨价与免费额度收紧——DeepSeek 峰谷定价和这条新闻是同一个故事的两端。<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a><a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<hr />
+<h2 id="大模型与-agent">大模型与 Agent</h2>
+<p><strong>S1.5 阿里 Qwen-Image-3.0：图像生成从「好看」卷到「好用」</strong>（财联社 / IT之家，07-21） 支持最大 4.5k token 超长输入，一次生成含公式符号、几何图形、逻辑推导步骤的知识图解与复杂 UI；12 国语言、20+ 款字体原生渲染，10px 小字清晰。阿里云百炼、千问 AI 平台已开放 API 邀测。 <strong>点评：</strong> 关键词从「准多齐美真」收敛为一个「实」字，方向正确——图像模型的下一战场是「可读的版面」。但没放权重和技术报告，可验证性打折。 <strong>对你：</strong> 这类「字图一体」模型成熟后，日报海报这类需求可以直接生成，替代一部分 HTML 截图流水线。<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></p>
+<p><strong>S1.5 智谱 GLM-5.5 预热：唐杰称「史诗级 plus」，参数或破万亿</strong>（80aj / 百度百科，07-20/21） 摩根大通预测 8 月发布，参数量或突破 1 万亿（GLM-5.2 为 744B），规模可能对标 DeepSeek V4 Pro 的 1.6T。唐杰回应马斯克「中国模型 2027 年 Q1 才能追上」的判断：「不需要那么久」。 <strong>点评：</strong> 话放得满，但 GLM-5.2 用约 1/4 参数量做到接近 Opus 级编码有先例，值得留档期。真正的问题是：万亿参数 + MIT 协议，谁跑得动？<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></p>
+<p><strong>S2 Kimi K3 权重将于 7 月 27 日前放出</strong>（财新，07-17） 2.8 万亿参数、号称最大开源模型；API 输入 3 美元/百万 token、输出 15 美元；官方称 Mooncake 分离式推理在编程场景缓存率超 90%，实际输入价约为标价 1/4。 <strong>点评：</strong> 是，就是笔者这一代。权重落地后，本地量化与微调的第一波社区反馈值得盯。<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
+<p><strong>S2 价格战回响：企业开始算「AI 账单」</strong>（彭博 / 财新，07-13 补） GPT-5.6（Sol/Terra/Luna）7 月 9 日全量开放后，「完成同样任务花更少 token」成为新卖点；Grok 4.5 宣称 token 效率两倍于对手。企业从 Tokenmaxxing 转向收紧使用限额。 <strong>点评：</strong> 叠加 DeepSeek 峰谷定价，本周主题只有一个：推理经济学。模型竞争的计量单位正从 benchmark 分变成美元/任务。<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></p>
+<hr />
+<h2 id="数据与-lakehouse">数据与 Lakehouse</h2>
+<p><strong>S1.5 Apache Amoro 主干推进 AIP-5 Phase 2：优化资源按需弹性扩容</strong>（GitHub 提交，07-22） dynamic-allocation 分组迎来需求驱动扩容：指数爬坡（1→2→4→8）按实际积压钳制、冷启动单实例探针、注册引导窗口防重复扩容；检测到瓶颈在规划（planning）而非线程时只告警不盲扩。 <strong>点评：</strong> 表优化资源的 K8s 化调度是 Amoro 相对纯 catalog 方案最实的差异化。Phase 2 把「扩」做细了，接下来看 Phase 3 怎么「缩」——缩容抖动才是生产事故之源。 <strong>对你：</strong> 这套 demand-driven 思路（backlog 超时 + 指数爬坡 + 配额感知）可直接借鉴到湖上任意任务调度器。</p>
+<p><strong>S2 LakeSoul：Rust 向量索引独立构建 + ANN 检索，升级 DataFusion 54</strong>（GitHub 提交，07-20） 新增 lakesoul-vector：IVF + RaBitQ 向量索引可离线独立构建，提供 Python API 端到端测试；元数据切到 Arrow IPC schema，并跟进 Vortex 投影下推。 <strong>点评：</strong> 国产湖格式把向量检索做成一等公民，AI-native lakehouse 路线与 Lance 遥相呼应，继续盯。</p>
+<p><strong>S2 Apache Iceberg 主干：V4 manifest 基础类型进场，远程扫描规划渐成</strong>（GitHub，本周） 1.11.0（5 月）后无新版本，但主干在堆两类大活：V4 manifest 的 TrackedFile 等基础类型，以及 REST 远程扫描规划（Spark 侧已可启用）。另：仓库新增 AGENTS.md 与《AI 生成贡献指南》。 <strong>点评：</strong> 连 Iceberg 都开始给 AI coding agent 立规矩了——那份 Guidelines 本身就值得每个开源维护者读一遍。</p>
+<hr />
+<h2 id="github-trending总榜-nday07-23-抓取14">GitHub Trending（总榜 · ⭐N/day，07-23 抓取）<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Repo</th>
+<th>语言</th>
+<th style="text-align: right;">总⭐</th>
+<th style="text-align: right;">增速</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd"><td>1</td><td>koala73/worldmonitor</td><td>TypeScript</td><td style="text-align: right;">69,003</td><td style="text-align: right;">⭐4,139/day</td></tr>
+<tr class="even"><td>2</td><td>ruvnet/RuView</td><td>Rust</td><td style="text-align: right;">83,812</td><td style="text-align: right;">⭐741/day</td></tr>
+<tr class="odd"><td>3</td><td>ayghri/i-have-adhd</td><td>Python</td><td style="text-align: right;">8,290</td><td style="text-align: right;">⭐1,699/day</td></tr>
+<tr class="even"><td>4</td><td>schollz/croc</td><td>Go</td><td style="text-align: right;">37,590</td><td style="text-align: right;">⭐739/day</td></tr>
+<tr class="odd"><td>5</td><td>likec4/likec4</td><td>TypeScript</td><td style="text-align: right;">4,279</td><td style="text-align: right;">⭐80/day</td></tr>
+<tr class="even"><td>6</td><td>chrislgarry/Apollo-11</td><td>Assembly</td><td style="text-align: right;">70,609</td><td style="text-align: right;">⭐768/day</td></tr>
+<tr class="odd"><td>7</td><td>jamiepine/voicebox</td><td>TypeScript</td><td style="text-align: right;">45,775</td><td style="text-align: right;">⭐557/day</td></tr>
+<tr class="even"><td>8</td><td>diegosouzapw/OmniRoute</td><td>TypeScript</td><td style="text-align: right;">25,303</td><td style="text-align: right;">⭐1,651/day</td></tr>
+<tr class="odd"><td>9</td><td>shiyu-coder/Kronos</td><td>Python</td><td style="text-align: right;">32,610</td><td style="text-align: right;">⭐137/day</td></tr>
+<tr class="even"><td>10</td><td>ComposioHQ/awesome-claude-skills</td><td>Python</td><td style="text-align: right;">68,784</td><td style="text-align: right;">⭐163/day</td></tr>
+<tr class="odd"><td>11</td><td>oblien/openship</td><td>TypeScript</td><td style="text-align: right;">7,302</td><td style="text-align: right;">⭐1,302/day</td></tr>
+<tr class="even"><td>12</td><td>agegr/pi-web</td><td>TypeScript</td><td style="text-align: right;">2,079</td><td style="text-align: right;">⭐314/day</td></tr>
+<tr class="odd"><td>13</td><td>rohitg00/ai-engineering-from-scratch</td><td>Python</td><td style="text-align: right;">42,263</td><td style="text-align: right;">⭐652/day</td></tr>
+<tr class="even"><td>14</td><td>tirth8205/code-review-graph</td><td>Python</td><td style="text-align: right;">25,323</td><td style="text-align: right;">⭐882/day</td></tr>
+<tr class="odd"><td>15</td><td>dottxt-ai/outlines</td><td>Python</td><td style="text-align: right;">15,106</td><td style="text-align: right;">⭐364/day</td></tr>
+</tbody>
+</table>
+<p><strong>点评：</strong> 榜单被 Agent 周边屠版——技能包（i-have-adhd：专治 coding agent 把答案埋进废话）、免费 AI 网关（OmniRoute：268+ 提供方聚合）、代码地图（code-review-graph：给 agent 减上下文）、pi coding agent 的 Web UI。模型层的战争打成了「给 agent 造装备」的战争。另外提醒：worldmonitor / RuView 的总星数与增速比例反常，刷星嫌疑不小，抄作业前先看代码。</p>
+<hr />
+<h2 id="关注清单异动">关注清单异动</h2>
+<ul>
+<li><strong>S1.5 browseros-ai/BrowserOS</strong>（07-22/23）：连续提交 BrowserClaw——跨 harness 安装托管技能（reconcile managed harness skills）、MCP 会话 token 估算持久化。浏览器 Agent 正在长出「技能分发层」。<strong>对你：</strong> 它的 harness-skill reconcile 机制可与 MemoryNexus 的技能/记忆下发互相参照。</li>
+<li><strong>S1.5 mvanhorn/last30days-skill v3.18.0</strong>（07-21）：发现流水线改为「宿主裁决三段协议」——删掉引擎内 LLM judge，判定权交还宿主模型（nominate → judge → finalize，文件契约 + TTL + 防呆）。<strong>对你：</strong> 这是「引擎不做智能、宿主才是裁判」的架构宣言，与 MemoryNexus 把判断留给 Agent 本体的设计同向，它的 handoff 契约值得细读。</li>
+<li><strong>S2 addyosmani/agent-skills</strong>（07-22）：TDD 技能生态中立化；新增 skill-gap issue 表单收集指导失配。</li>
+<li><strong>S2 deepset-ai/haystack</strong>（07-22）：README 主推 Haystack 3.0 特性；修复 State/PipelineSnapshot 序列化。3.0 时代已来。</li>
+<li><strong>S2 open-metadata/OpenMetadata</strong>（07-22）：修复 2.0 迁移后 retention 任务失败（thread_entity 改名引发后续清理被静默跳过）；Task 2.0 列级 TagUpdate 改走版本化补丁。修复 PR 由 Claude Opus 4.7 联名提交——AI 结对编程已是日常。</li>
+<li><strong>S2 ZhuLinsen/daily_stock_analysis</strong>（07-22）：完成 phase 2 多策略审议与调度。</li>
+<li><strong>S2 xbtlin/ai-berkshire</strong>（07-20）：上线「中国大模型六强」横向深度研报（总报告 + 6 份分报告 + 行业格局），并扩写 Kimi K3 架构讲解（MLA / KDA / AttnRes / MoE 均衡 / Muon / QAT）。</li>
+<li><strong>S2 blackfaced/MemoryNexus</strong>：窗口内无新提交；最近动态（07-15/16）为 personal feedback 决策血缘与 evidence-backed sleep planning 实验。你的经验闭环和 Hyra 在同一个星期上了热搜，巧了。</li>
+<li>无异动：apache/gravitino（1.3.0，06-29）、lance-format/lance（v8.0.0，07-01）、deepseek-ai/3FS、deepseek-ai/smallpond、datajuicer/data-juicer、obra/superpowers、mattpocock/skills（07-21 一次小重构）、minmaxflow/mini-kode、harvard-edge/cs249r_book、Netflix/metaflow。</li>
+</ul>
+<hr />
+<h2 id="融资与商业">融资与商业</h2>
+<ul>
+<li><strong>S1.5 Glow（端点安全）A 轮 1.8 亿美元，估值 12 亿</strong>（Sequoia、Cyberstarts、Redpoint 等，07-22）：赌「员工跑 AI agent 的终端」成为新攻击面，做软件与 agent 的准入策略层而非又一层检测。<strong>点评：</strong> Agent 时代的安全栈从「管软件」变成「管代理人」，这个叙事今年第三笔大额了。</li>
+<li><strong>S1.5 Cathedral（军用网络 AI）1.6 亿美元，估值 14 亿</strong>（a16z + Sequoia，07-22）：前政府效率部成员创办，AI 驱动军事网络攻防，并探索收购数据中心自持算力。<strong>点评：</strong> 国防 + AI + 算力自持，政策窗口期的极限套利样本。</li>
+<li><strong>S2 Candid Health D 轮 1.2 亿美元</strong>（Sixth Street Growth，07-22）：医疗收入周期管理自动化，估值较上轮的 3 倍——AI 在后台流程变现的教科书。</li>
+<li><strong>S2 Passionfroot A 轮 1,500 万美元 / 1872 种子轮 1,500 万美元</strong>（07-22）：前者把创作者渠道做成 B2B 分发基础设施（客户含 ElevenLabs、Replit）；后者由前 SpaceX 工程师用「物理 AI」做钢结构自动化工厂。</li>
+<li><strong>S2 另据 Daily Gradient（单源待核）</strong>：Anthropic 正寻求数十亿美元 pre-IPO 信贷额度（07-22）。一边花 15 亿美元和解，一边补弹药。<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a><a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></li>
+</ul>
+<hr />
+<h2 id="时政与经济程序员视角">时政与经济（程序员视角）</h2>
+<ul>
+<li><strong>S2 美股 7/22 收高：芯片股领涨，标普三连跌后反弹</strong>（新浪财经，07-22）：道指 +0.74% 报 52,224.82；纳指 +1.29% 报 25,837.21；标普 +0.89% 报 7,509.20。已公布财报的 54 家标普成分股中 87% 利润超预期；本周 Alphabet、IBM、特斯拉发财报，交易员紧盯「AI 支出细节」。背景变量：美伊冲突升级。<strong>点评：</strong> 财报季变成 AI capex 听证会——和今日必读④ 是同一条主线，接下来两周看巨头怎么解释钱花哪了。<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></li>
+<li><strong>S2 政府与监管动态（单源待核）</strong>（Daily Gradient，07-22）：英国把 AI 事务升至内阁级别；美国又一名 AI 沙皇辞职；多国质疑聊天机器人投票建议的可靠性。<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a></li>
+</ul>
+<hr />
+<h2 id="社区风向hn-x-在吵什么">社区风向（HN / X 在吵什么）</h2>
+<p>HN 今晨榜首是<strong>陶哲轩与 ChatGPT 关于 Jacobian 猜想反例的对话实录</strong>（566 分，358 评论）——顶级数学家把模型当「讨论班同事」用，评论区争论这是协作范例还是高级 autocomplete。同榜：<strong>GigaToken</strong> 号称约 1000 倍速分词器（353 分）；<strong>「没人知道二手 GPU 集群值多少钱」</strong>（164 分 / 152 评论——与科技巨头表外债务互相印证，资产端也开始模糊）；<strong>「Are AI Labs Pelicanmaxxing?」</strong>（380 分）讽刺实验室囤算力如鹈鹕吞鱼；<strong>「Reddit 判定纯 HTML 不安全」</strong>（256 分 / 274 评论）——Web 正对裸浏览器关门，结合 Reddit 考虑限制 Google 的 AI 抓取，内容围墙越砌越高。X 上热转的是 DeepSeek 峰谷定价的算账帖与 Hyra 的「经验库」架构图。<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></p>
+<hr />
+<p><em>编辑：Kimi K3 ｜ 信源：GitHub Trending 原始 HTML、GitHub API、36氪、财新、财联社、IT之家、Ars Technica、TechCrunch、Bloomberg、日经、Hacker News 等</em> <em>S 分级：S1 必读 / S1.5 重要 / S2 速览</em></p>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>https://www.ithome.com/0/979/440.htm<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>https://tech.ifeng.com/c/8uwBXzEgyIQ<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>https://www.36kr.com/p/3903106705606274<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p>https://36kr.com/newsflashes/3874139626984448<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>https://arstechnica.com/tech-policy/2026/07/judge-approves-anthropics-1-5-billion-copyright-settlement-with-authors/<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p>https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p>https://m.sohu.com/a/1052894813_115831<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p>https://www.ndtvprofit.com/technology/oracle-credit-risk-hits-near-18-year-high-on-ai-debt-load-angst-11799444<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>https://www.cls.cn/detail/2432468<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p>https://www.ithome.com/0/979/530.htm<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>https://www.80aj.com/2026/07/20/glm-55-trillion-params/<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12" role="doc-endnote"><p>https://www.caixin.com/2026-07-17/102465041.html<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>https://database.caixin.com/2026-07-13/102463637.html<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>https://github.com/trending?since=daily<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>https://techstartups.com/2026/07/22/venture-capital-startup-funding-roundup-july-22-2026-andreessen-horowitz-redpoint-ventures-sequoia-capital-insight-partners-more/<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>https://gradient.dongmanqing.com/<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17" role="doc-endnote"><p>https://finance.sina.com.cn/stock/usstock/c/2026-07-22/doc-iniirfsu4801342.shtml<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18" role="doc-endnote"><p>https://gradient.dongmanqing.com/<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19" role="doc-endnote"><p>https://news.ycombinator.com/<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</body>
+</html>
